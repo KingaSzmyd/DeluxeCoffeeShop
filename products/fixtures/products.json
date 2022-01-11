@@ -1,0 +1,352 @@
+[
+    {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340155",
+        "name": "JFG Special Blend Filter Pack",
+        "description": "Made with Arabica coffee beans, JFG Special Blend coffee is expertly roasted and ground. The individual sealed filter packs reduce prep and cleaning. Shelf life of approximately 182 days. Each blue bag contains seven,  blend sealed inside. Place filter into brewer and start brew. Proper brewing temperature is 195 - 205 degrees.",
+        "price": 25.99,
+        "category": 1,
+        "rating": 4.6,
+        "image_url": "https://m.media-amazon.com/images/I/91AH6Em8n3L._SL1500_.jpg",
+        "image": "JFGFilterCoffee.jpg"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001600425",
+        "name": "Folgers Classic Decaf Medium Roast Ground Coffee",
+        "description": "No messy post-brew disposal and no separate filters to manage. Peel and reseal pouch helps maintain freshness for each brew. Medium-Dark Roast and Arabica/Robusta Blend. Folgers ready-to-brew Filter Packs deliver the ultimate pre-measured convenience and consistent quality.",
+        "price": 26.43,
+        "category": 1,
+        "rating": 4.6,
+        "image_url": "https://m.media-amazon.com/images/I/51bg24LyC1L.jpg",
+        "image": "FolgersFilterCoffee.jpg"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001730010",
+        "name": "Maxwell House Master Blend Medium Roast Ground Coffee",
+        "description": "Offers irresistible aroma and fresh-brewed flavor. Rich and classic, Maxwell House is perfect for traditional breakfast occasions or throughout the day for a burst of energy.",
+        "price": 35.10,
+        "category": 1,
+        "rating": 4.7,
+        "image_url": "https://m.media-amazon.com/images/I/81mhCVB5RPS._SL1500_.jpg",
+        "image": "MaxwellHouseFilterCoffee.jpg"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001890157",
+        "name": "Community Coffee Breakfast Blend, Medium Roast Pre-Measured Coffee",
+        "description": "Start your day with this smooth, bright, medium roast coffee with notes of honey and hazelnut. We take the highest quality Arabica beans, roast them & grind them to perfection. Our ground coffee is constantly watched, brewed & tasted by our experts for rich & flavorful coffee.  Ground to perfection to brew as drip coffee, pour over or use in your French press. Plenty of options for every taste including hot, iced or cold brew coffee.",
+        "price": 37.99,
+        "category": 1,
+        "rating": 3,
+        "image_url": "https://m.media-amazon.com/images/I/71KFRrQCwCL._SL1500_.jpg",
+        "image": "BreakfastFilterCoffee.jpg"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5002111605",
+        "name": "Drip-Brewing Single Pot Portions Caffe Verona Ground Coffee",
+        "description": "Dark-Grounded Coffee Verona is a part of Starbucks selections. Coffee packets contain reground and measured drip-brewing coffee to give you the Starbucks experience from your own standard coffeemaker. With tasting notes of dark cocoa and roast sweet, Cafe Verona is a full-bodied, multi-region blend of coffees with the sweet touch of Italian Roast. Dark-roasted coffees feature a fuller body and robust, bold flavors. Portioned packet of 2.5 oz. makes a perfectly brewed pot of delicious coffee.",
+        "price": 32.99,
+        "category": 1,
+        "rating": 5,
+        "image_url": "https://m.media-amazon.com/images/I/61Dz90RW4jL._SL1000_.jpg",
+        "image": "VeronaFilterCoffee.jpg"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5002260206",
+        "name": "Lavazza Super Crema Whole Bean Coffee",
+        "description": "Mild and creamy medium espresso roast with notes of hazelnuts and brown sugar. Blended and roasted in Italy. Best used with espresso machine. Produced in a nut-free facility center, contains only coffee.",
+        "price": 20.65,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "https://m.media-amazon.com/images/I/51Q20gK3QlL._SL1500_.jpg",
+        "image": "LavazzaBeans.jpg"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5002440521",
+        "name": "Lavazza Gran Filtro Whole Bean Coffee",
+        "description": "Well rounded medium roast with sweet aroma and hints of fruit. 100 percent Arabica. Blended and roasted in Italy. Best used in drip coffee maker or French press.",
+        "price": 26.06,
+        "category": 2,
+        "rating": 4.4,
+        "image_url": "https://m.media-amazon.com/images/I/71peaOipDAL._SL1500_.jpg",
+        "image": "LavazzaFiltroBeans.jpg"
+      }
+    },
+    {
+      "pk": 8,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5002601115",
+        "name": "Lavazza Alteco Organic Premium Blend Coffee",
+        "description": "A sweet and elegant espresso, a velvety cream and persistent aromas with notes of honey and nuts. Gentle roasting process. Organic and UTZ Certified blend. Best used for espresso but also suitable in any coffee maker.",
+        "price": 71.35,
+        "category": 2,
+        "rating": 4.5,
+        "image_url": "https://m.media-amazon.com/images/I/71NGLHzhLfS._SL1500_.jpg",
+        "image": "LavazzaOrganicBeans.jpg"
+      }
+    },
+    {
+      "pk": 9,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5002690715",
+        "name": "Lavazza Espresso Barista Gran Crema Whole Bean Coffee",
+        "description": "Rich bodied medium roast with chocolatey and spicy aroma, long lasting and round flavor, and lingering crema. Non-GMO. Blended and roasted in Italy. Best used for espresso but also suitable in any coffee maker.",
+        "price": 17.22,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "https://m.media-amazon.com/images/I/61zJFyE6NNL._SL1500_.jpg",
+        "image": "LavazzaBaristaBeans.jpg"
+      }
+    },
+    {
+      "pk": 10,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5002701115",
+        "name": "Lavazza Espresso Barista Perfetto Whole Bean Coffee 100% Arabica, Medium Espresso Roast",
+        "description": "Delicate and aromatic espresso with chocolate undertones and a delicate crema. Non-GMO, 100% Arabica. Blended and roasted in Italy. Best used with espresso machine or moka pot; also suitable with drip coffee maker and French press.",
+        "price": 34.05,
+        "category": 2,
+        "rating": 4.4,
+        "image_url": "https://m.media-amazon.com/images/I/71fY1Yc8sjL._SL1500_.jpg",
+        "image": "LavazzaBaristaEspressoBeans.jpg"
+      }
+    },
+    {
+      "pk": 11,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5002761055",
+        "name": "Nespresso Capsules VertuoLine, Medium and Dark Roast Coffee, Variety Pack",
+        "description": "This Nespresso coffee assortment offers 30 Nespresso Pods in a variety of 3 best-selling coffee blends for the Nespresso VertuoLine System.10 Stormio, 10 Odacio, 10 Melozio. This assortment will let you explore the rich tastes of the following Nespresso Capsules: Stormio (Intensity 8), Odacio (Intensity 7) & Melozio (Intensity 6). It's the perfect choice to discover a distinctive range of extraordinary coffees. Nespresso aluminum capsules are fully recyclable and guarantee coffee freshness - we provide different options for recycling your used aluminum coffee pods to fulfill our collective commitment to protecting the environment.",
+        "price": 29.76,
+        "category": 3,
+        "rating": 3,
+        "image_url": "https://m.media-amazon.com/images/I/71y-kp+nXrL._SL1500_.jpg",
+        "image": "NespressoCapsules.jpg"
+      }
+    },
+    {
+      "pk": 12,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5002820069",
+        "name": "Peet's Coffee Espresso Capsules Variety Pack",
+        "description": "Experience the boldness of Peet's signature espresso with four of our luxurious, rich blends in this sampler pack. 100% Arabica Coffee. Ricchezza (Berry and Brown Sugar. Medium Roast) Crema Scura (Dark Luscious Crema.Medium Roast), Ristretto (Spice and Chocolate.Dark Roast), Nerissimo (Bittersweet Indulgence. Dark Roast). Designed for Nespresso Original Machines Only. Peet’s aluminum capsules are fully recyclable through our mail-back program. ",
+        "price": 24.30,
+        "category": 3,
+        "rating": 4.6,
+        "image_url": "https://m.media-amazon.com/images/I/81cRfKh+6zL._SL1500_.jpg",
+        "image": "PeetsCapsules.jpg"
+      }
+    },
+    {
+      "pk": 13,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5002820147",
+        "name": "Lavazza Blue Single Espresso Caffe Crema Coffee Capsules",
+        "description": "Pack of 100 single-serve Lavazza Blue capsules with the espresso Cafe crema coffee blend. Sweet blend from its aromatic notes of biscuits and jasmine. 100% Arabica. Blended and roasted in Italy. Can only be brewed using a Lavazza Blue machine.",
+        "price": 49.52,
+        "category": 3,
+        "rating": 3.2,
+        "image_url": "https://m.media-amazon.com/images/I/51rXjn2mnRL._SL1000_.jpg",
+        "image": "LavazzaCapsules.jpg"
+      }
+    },
+    {
+      "pk": 14,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5002910572",
+        "name": "Victor Allen’s Flavored & Unflavored Coffee Variety Pack",
+        "description": "Includes 96 Single Serve K-cup Coffee Pods. A full bodied and smooth medium roast. A light floral aroma, mild taste and smooth finish, perfect to the last drop. 100% Gluten Free and Non-GMO - our coffee products do not contain gluten or genetically modified ingredients. For use in all single serve brewing systems, including Keurig 2.0.",
+        "price": 60.49,
+        "category": 3,
+        "rating": 4.7,
+        "image_url": "https://m.media-amazon.com/images/I/71j1in7EGFL._SL1500_.jpg",
+        "image": "VictorCapsules.jpg"
+      }
+    },
+    {
+      "pk": 15,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5002990740",
+        "name": "L'OR Espresso Capsules, 50 Pods Variety Pack",
+        "description": "COMPATIBLE WITH THE NESPRESSO ORIGINAL MACHINES (NOT COMPATIBLE WITH VERTUO). Variety Pack of 5 boxes that include 10 capsules each, ranging from medium roast Intensity 8 to dark roast Intensity 12. ALUMINUM CAPSULES protect and preserve freshness, for the L’OR gold standard body, intensity and crema. INDULGE YOUR SENSES with pure coffee pleasure from our powerful, expressive, spicy & sumptuous blends – Profondo Lungo, Colombia, Or Absolu, Ristretto, and Onyx. COFFEE BEANS exclusively selected by L'OR for an extraordinary indulgent espresso experience. 100% UTZ CERTIFIED Arabica roast and ground coffee, grown according to sustainable production methods.",
+        "price": 40.30,
+        "category": 3,
+        "rating": 4.8,
+        "image_url": "https://m.media-amazon.com/images/I/71xjlinrfLL._SL1500_.jpg",
+        "image": "LorCapsules.jpg"
+      }
+    },
+    {
+      "pk": 16,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003050248",
+        "name": "Nespresso Vertuo Plus Coffee and Espresso Maker by De'Longhi, Grey with Aeroccino Milk Frother",
+        "description": "VertuoPlus Deluxe makes both coffee and espresso in a variety of sizes:  single and double espresso. Includes a free set of Nespresso Vertuo capsules (capsule assortment may vary from picture). Brew the perfect single serve Coffee or Espresso drink time after time, thanks to Nespresso's Centrifusion technology using barcodes to deliver the best in cup results including the perfect crema for large Coffee cup sizes. Create barista grade brewed single serve Coffee or Espresso cups at the touch of a single button; Designed for use with Nespresso Vertuo capsules only. This machine also has a fast heat up time of only 15 seconds. There is an energy saving automatic shutoff at 9 min of inactivity. The Nespresso Aeroccino3 provides smooth hot or cold milk froth for your coffee recipes with one touch. It froths all types of milk in a few seconds, without noise or vibration.",
+        "price": 166.51,
+        "category": 4,
+        "rating": 4.4,
+        "image_url": "https://m.media-amazon.com/images/I/71zI-ry-gXL._AC_SL1500_.jpg",
+        "image": "NespressoMachine.jpg"
+      }
+    },
+    {
+      "pk": 17,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003070787",
+        "name": "DeLonghi ESAM3300 Magnifica Super Automatic Espresso & Coffee Machine, Silver",
+        "description": "The professional burr grinder with 13 adjustable settings grinds fresh beans every time to ensure maximum freshness. You can also use pre-ground in the second chamber. Your choice of regular, specialty or decaf. A manual frother mixes steam and milk to create a rich, creamy froth for evenly textured drinks – just the way you like them. Each cup is automatically brewed to the perfect temperature, richness and density. And you can customize the settings to ensure its always just the way you like it. The compact, extractable brew unit is not only easy to clean, it self-adjusts for one or two shots of espresso. The adjustable manual Cappuccino System mixes steam and milk to create the thickest, longest-lasting foam for your cappuccino. And it’s easy to adjust the levels to prepare a creamy latte, macchiato or flat white. Design your ideal espresso and cappuccino experience by programming in your preferences. The machine “remembers” the details, from the strength of your espresso to your preferred size beverage and much more. Simply adjust the menu settings for temperature, coffee strength and cup size according to your preferences. The machine takes care of the rest.",
+        "price": 624.41,
+        "category": 4,
+        "rating": 4.4,
+        "image_url": "https://m.media-amazon.com/images/I/71fis7dVn8L._AC_SL1500_.jpg",
+        "image": "DelonghiMagnificaMachine.jpg"
+      }
+    },
+    {
+      "pk": 18,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003090182",
+        "name": "DeLonghi EC155M Manual Espresso Machine, Cappuccino Maker",
+        "description": "Metal: top, control panel and drip tray. Stainless steel boiler. Transparent water reservoir (capacity: 1 l.). Self-priming system means machine is always ready for use. 2 separate thermostats to control water and steam temperatures. ‘Cappuccino System’: it mixes steam, air and milk, producing a rich, creamy froth for great cappuccino. Single selector knob for on/off, espresso and cappuccino with indicator lights. Adjustable steam emission. Special filter holder for ground coffee and ‘Easy Serving Espresso’ pods with crema device( 2 different filters with crema device). Removable drip-tray. Anti drip system. Incorporated coffee tamper.",
+        "price": 173.30,
+        "category": 4,
+        "rating": 4.8,
+        "image_url": "https://m.media-amazon.com/images/I/914XCtnuWlL._AC_SL1500_.jpg",
+        "image": "DelonghiManualMachine.jpg"
+      }
+    },
+    {
+      "pk": 19,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003090186",
+        "name": "DeLonghi EC155 15 Bar Espresso and Cappuccino Machine, Black",
+        "description": "15-bar professional pressure assures quality results every time, and adjustable controls allow you to make modifications for your personal taste preferences. Whatever your preference – single or double espresso, cappuccino or latte – the machine brews authentic barista-quality beverages just like you enjoy at your favorite coffeehouse. A manual frother mixes steam and milk to create a rich, creamy froth for evenly textured drinks – just the way you like them. The three-in-one filter holder, included with the unit, has filters for one espresso shot, two shots, and one for an easy-serve espresso pod – whatever your preference. The Advanced Cappuccino System maintains the optimal temperature so you can brew cup after cup instantly. With a sleek profile, compact design and narrow footprint, the EC155 fits beautifully on a kitchen countertop – without taking up too much space. The water tank is simple to remove, refill and reattach, and the water level is easily visible to eliminate the guesswork.Removable water tank and drip tray make for easy cleanup, and the parts are dishwasher safe.",
+        "price": 89.99,
+        "category": 4,
+        "rating": 5,
+        "image_url": "https://m.media-amazon.com/images/I/81e0jcHe5TL._AC_SL1500_.jpg",
+        "image": "DelonghiBarMachine.jpg"
+      }
+    },
+    {
+      "pk": 20,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003161326",
+        "name": "De'Longhi 15 bar Pump Espresso Maker, EC702, Metal",
+        "description": "Pump driven and 15 bars. Automatically self-primes with water level indicator. Use pods or ground coffee with the convenient patented filter holder. Craft cappuccinos or lattes with the patented easy to use frothier Never install the appliance in environments where the temperature may reach 0°C (32°F) or lower (the appliance may be damaged if the water freeze).",
+        "price": 297.06,
+        "category": 4,
+        "rating": 4.7,
+        "image_url": "https://m.media-amazon.com/images/I/81d5Vc5-dBL._AC_SL1500_.jpg",
+        "image": "DelonghiPumpMachine.jpg"
+      }
+    },
+    {
+      "pk": 21,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003230723",
+        "name": "Milk Boss - Coffee Frother Electric Handheld Foam Maker",
+        "description": "Recreate the creamy and velvety morning latte or cappuccino of your favorite coffee house at the comfort of your home with the Milk Boss Double Grip Milk Frother. This elegant and compact frother creates silky and rich froth in seconds courtesy of its powerful 14000 RPM motor. The perfect tool for whipping up coffee, latte, cappuccino, matcha, dalgona coffee, hot chocolate, and more!",
+        "price": 11.70,
+        "category": 5,
+        "rating": 4.3,
+        "image_url": "https://m.media-amazon.com/images/I/71IjciPgmmL._AC_SL1500_.jpg",
+        "image": "MilkBossAccessories.jpg"
+      }
+    },
+    {
+      "pk": 22,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003270936",
+        "name": "Huogary Milk Frother, Milk Steamer for Milk Foam & Hot Milk",
+        "description": "Huogary automatic electric milk frother guarantees the texture and original flavor of foam and steamed milk, allowing you to indulge in cafe-style cappuccino, latte, macchiato, etc. Just press the button, 60~120s can get hot milk and exquisite milk foam. The fully automatic process can be completed in less than two minutes. (if you need richer foam, just repeat the sanding). The milk frother and steamer adopt modern and fashionable design, equipped with double-layer vacuum insulation wall, high-quality stainless steel and non-stick coating interior, which can realize convenient cleaning and longevity. Our milk frother is equipped with strix temperature control device and has passed etl certification. Note: The rated voltage is 120V.",
+        "price": 38.70,
+        "category": 5,
+        "rating": 5,
+        "image_url": "https://m.media-amazon.com/images/I/61Ya8ZIMwgL._AC_SL1500_.jpg",
+        "image": "HuogaryMilkFrother.jpg"
+      }
+    },
+    {
+      "pk": 23,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003360384",
+        "name": "Zwilling Enfinigy Cool Touch Electric Kettle Pro",
+        "description": "Double-walled body keeps water hot longer while the outside remains cool to the touch. The ZWILLING Enfinigy Cool Touch Electric Kettle Pro has 6 pre-set program settings that will help you make the perfect drink for every occasion. The electric hot water kettle is ideal temperature selection for coffee, tea, baby food, and more. Keep-warm function holds water at the desired temperature for up to 30 min. 70° lid opening prevents direct contact with hot steam. Seamless stainless-steel kettle for easy, residue-free clean up. German engineered by ZWILLING, designed in Milan, Italy by Matteo Thun & Antonio Rodriguez.",
+        "price": 117.03,
+        "category": 5,
+        "rating": 4.8,
+        "image_url": "https://m.media-amazon.com/images/I/61UpMKjj16L._AC_SL1500_.jpg",
+        "image": "ZwillingKettle.jpg"
+      }
+    },
+    {
+      "pk": 24,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003440111",
+        "name": "Mug Warmer, Home, Office, Black",
+        "description": "Metal, 17 watt mug warmer for use with coffee, tea, hot cocoa & more. Easy to tote and take anywhere. Surface easily wipes clean. On/off switch with indicator light. Longer power cord for increased mobility.",
+        "price": 10.79,
+        "category": 5,
+        "rating": 3.8,
+        "image_url": "https://m.media-amazon.com/images/I/81Ja08WuPUL._AC_SL1500_.jpg",
+        "image": "MugWarmer.jpg"
+      }
+    },
+    {
+      "pk": 25,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003540313",
+        "name": "Hamilton Beach Fresh Grind Electric Coffee Grinder for Beans, Spices and More",
+        "description": "Quieter than competitors: Whether it’s early morning or late at night, you can make fresh grounds without making too much noise. Removable grinding chamber: The grinding chamber removes for easy filling of whole beans or spices once finished, remove the chamber for easy cleaning. Make up to 12 cups of coffee: You can grind up to 9 tablespoons of beans, enough for 12 cups of coffee. Wipe the base with a damp cloth. Hidden cord storage: A hideaway cord storage at the bottom of the grinder stores the cord neatly and out of sight when it is not in use. Stainless steel blades: Durable stainless steel blades grind coffee beans and spices with ease.",
+        "price": 16.20,
+        "category": 5,
+        "rating": 3,
+        "image_url": "https://m.media-amazon.com/images/I/51B+lfACI7L._AC_SL1500_.jpg",
+        "image": "ElectricGrinder.jpg"
+      }
+    }
+  ]
