@@ -17,10 +17,10 @@
                 Coffee
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Filter Coffee</a>
-                <a href="" class="dropdown-item">Coffee Beans</a>
-                <a href="" class="dropdown-item">Coffee Capsuls</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?category=filter_coffee" class="dropdown-item">Filter Coffee</a>
+                <a href="{% url 'products' %}?category=coffee_beans" class="dropdown-item">Coffee Beans</a>
+                <a href="{% url 'products' %}?category=coffee_capsuls" class="dropdown-item">Coffee Capsuls</a>
+                <a href="{% url 'products' %}?category=filter_coffee,coffee_beans,coffee_capsuls" class="dropdown-item">All Products</a>
             </div>
         </li>
 
@@ -29,9 +29,9 @@
                 Equipment
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Coffee Machines</a>
-                <a href="" class="dropdown-item">Coffee Accessories</a>
-                <a href="" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?category=coffee_machines" class="dropdown-item">Coffee Machines</a>
+                <a href="{% url 'products' %}?category=coffee_accessories" class="dropdown-item">Coffee Accessories</a>
+                <a href="{% url 'products' %}?category=coffee_machines,coffee_accessories" class="dropdown-item">All Products</a>
             </div>
         </li>
 
