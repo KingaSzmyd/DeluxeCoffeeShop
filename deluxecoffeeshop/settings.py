@@ -120,7 +120,7 @@ LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
 
-WSGI_APPLICATION = 'deluxecoffeeshop.wsgi.application'
+WSGI_APPLICATION = 'msp4-deluxecoffeeshop.wsgi.application'
 
 
 # Database
