@@ -1,1 +1,1 @@
-web: gunicorn msp4-deluxecoffeeshop.wsgi:application
+web: gunicorn deluxecoffeeshop.wsgi:application
