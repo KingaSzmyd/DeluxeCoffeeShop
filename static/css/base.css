@@ -17,6 +17,14 @@ body {
     color: #fafafa;
 }
 
+.footer-container {
+    padding-top: 150px;
+}
+
+.fa-stack {
+    color: #fafafa !important;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -39,6 +47,7 @@ body {
     color: white;
     min-width: 260px;
     margin-top: 0 !important;
+    margin-bottom: 50px !important;
 }
 
 .btn-black {
