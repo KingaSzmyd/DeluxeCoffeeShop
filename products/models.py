@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
 class Category(models.Model):
@@ -24,22 +25,30 @@ class Product(models.Model):
     description = models.TextField()
     has_sizes = models.BooleanField(default=False, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    rating = models.DecimalField(
-        max_digits=6, decimal_places=2, null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
-
+    RATING_CHOICES = (
+            (5, '5'),
+            (4, '4'),
+            (3, '3'),
+            (2, '2'),
+            (1, '1'),
+    )
+    rating = models.IntegerField(choices=RATING_CHOICES, default=1)
+   
 
     def __str__(self):
         return self.name
 
 
-class Rating(models.Model):
-    rating = models.IntegerField()
-    review = models.TextField()
+class Review(models.Model):
     product = models.ForeignKey(
-        'Product', related_name='ratings', on_delete=models.CASCADE)
+        'Product', null=True, blank=True, on_delete=models.SET_NULL)
+    author = models.ForeignKey(
+        User, related_name='reviews', on_delete=models.CASCADE)
+    date = models.DateTimeField(auto_now_add='true')
+    comment = models.TextField()
+    
 
     def __str__(self):
-        return "{}".format(self.rating)
-
+        return self.name

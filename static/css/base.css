@@ -116,6 +116,10 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+.fa-star {
+    color: #F7BD23 !important;
+}
+  
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
