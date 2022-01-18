@@ -29,5 +29,17 @@ class Product(models.Model):
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
 
+
     def __str__(self):
         return self.name
+
+
+class Rating(models.Model):
+    rating = models.IntegerField()
+    review = models.TextField()
+    product = models.ForeignKey(
+        'Product', related_name='ratings', on_delete=models.CASCADE)
+
+    def __str__(self):
+        return "{}".format(self.rating)
+
