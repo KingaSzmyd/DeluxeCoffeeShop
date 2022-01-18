@@ -39,16 +39,3 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
-
-
-class Review(models.Model):
-    product = models.ForeignKey(
-        'Product', null=True, blank=True, on_delete=models.SET_NULL)
-    author = models.ForeignKey(
-        User, related_name='reviews', on_delete=models.CASCADE)
-    date = models.DateTimeField(auto_now_add='true')
-    comment = models.TextField()
-    
-
-    def __str__(self):
-        return self.name
