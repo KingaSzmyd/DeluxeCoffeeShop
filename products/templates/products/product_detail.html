@@ -50,7 +50,7 @@
                     {% endif %}
                     <p class="mt-3">{{ product.description }}</p>
                     <small class="ml-3">
-                        <a href="{% url 'review_detail' product.id %}">Add Review</a>
+                        <a href="{% url 'reviews' product.id %}">Add Review</a>
                     </small>
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}

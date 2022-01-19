@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.utils.text import slugify
 
 from .models import BlogPost
-from .forms import CommentForm, BlogPostForm
+from .forms import BlogForm, CommentForm
 
 # Create your views here.
 

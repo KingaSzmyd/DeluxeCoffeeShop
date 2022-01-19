@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="product-details-container mb-5 mt-md-5">
+                    <div class="card h-100 border-0">
+                        <div class="card-body pb-0">
+                            <p class="mb-0">{{ post.title }}</p>
+                        </div>
+                    <a href="{% url 'blog_detail' blog_post.slug %}">
+                        <img class="card-img-top img-fluid" src="{{ post.image }}" alt="{{ post.title }}">
+                    </a>
+                    <p class="text-muted">{{ blog_post.date_posted }}</p>
+
+
+
+                    <p class="blog-post-content mb-2">{{ blog_post.body }}</p>
+                    <p>
+                        <strong>Article by {{ blog_post.author }}</strong>
+                    </p>
+                    {% if request.user.is_superuser %}
+                        <small class="ml-3">
+                            <a href="">Edit</a> | 
+                            <a class="text-danger" href="">Delete</a>
+                        </small>
+                    {% endif %}
+                </div>
+            </div>  
+        </div>
+    </div>
+{% endblock %}
