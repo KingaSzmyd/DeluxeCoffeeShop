@@ -20,7 +20,7 @@ def reviews(request):
     return render(request, 'reviews/reviews.html', context)
 
 
-def review_detail(request, product_id):
+def review_detail(request, post_id):
     """ A view that returns individual review posts """
     review_post = get_object_or_404(Review)
     comments = review_post.comments.all()
