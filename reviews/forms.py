@@ -1,11 +1,12 @@
 from django import forms
-from .models import Review 
+from products.widgets import CustomClearableFileInput
+from .models import ReviewPost 
 
 
 class ReviewForm(forms.ModelForm):
 
     class Meta:
-        model = Review
+        model = ReviewPost
         fields = ('body',)
 
     def __init__(self, *args, **kwargs):

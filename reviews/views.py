@@ -1,18 +1,17 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
 from django.utils.text import slugify
-from django.contrib.auth.decorators import login_required
 
-from .models import Review
+from .models import ReviewPost
 from .forms import ReviewForm
 
 
 # Create your views here.
 
 
-def reviews(request):
+def review_posts(request):
     """ A view to return the main reviews page """
-    posts = reviews.objects.all()
+    posts = ReviewPost.objects.all()
     context = {
         'posts': posts,
     }
@@ -20,27 +19,24 @@ def reviews(request):
     return render(request, 'reviews/reviews.html', context)
 
 
-def review_detail(request, post_id):
+def review_detail(request, slug):
     """ A view that returns individual review posts """
-    review_post = get_object_or_404(Review)
+    review_post = get_object_or_404(ReviewPost, slug=slug)
     comments = review_post.comments.all()
     new_comment = None
 
     if request.method == 'POST':
         review_form = ReviewForm(request.POST)
         if review_form.is_valid():
-            # Creates new_comment object (doesn't save it)
             new_comment = review_form.save(commit=False)
-            # Assigns the value of what product the user is on
             new_comment.post = review_post
-            # Assigns the username (must be logged in to comment)
             new_comment.username = request.user
             new_comment.save()
             messages.info(request, 'Your review has been posted!')
-            return redirect(reverse('review_detail', args=[review_post.id]))
+            return redirect(reverse('review_detail', args=[review_post.slug]))
         else:
-            messages.error(request, 'Failed to post your comment. Check that \
-                the form is valid and try again.')
+            messages.error(request, 'Failed to post your review. Check that \
+                the form is valid and try again.')  
     else:
         review_form = ReviewForm()
 
