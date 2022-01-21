@@ -17,12 +17,21 @@ body {
     color: #fafafa;
 }
 
+footer{
+    background-color: white !important;
+    padding-top: 20px;
+}
 .footer-container {
     padding-top: 150px;
 }
 
+.copyright {
+    float: left !important;
+}
+
 .fa-stack {
     color: #fafafa !important;
+    font-size: 17px !important;
 }
 
 /* from Bulma */
@@ -43,7 +52,6 @@ body {
 }
 
 .shop-now-button {
-    background: black;
     color: white;
     min-width: 260px;
     margin-top: 0 !important;
@@ -61,14 +69,19 @@ body {
     border: 1px solid black;
 }
 
+.shop-now-button,
 .shop-now-button:hover,
 .shop-now-button:active,
-.shop-now-button:focus,
+.shop-now-button:focus {
+    background: #977720 !important;
+    color: white;
+}
+
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: black;
+    color: white; 
 }
 
 .text-black {
@@ -76,7 +89,7 @@ body {
 }
 
 .bg-black {
-    background: #000 !important;
+    background: #977720 !important;
 }
 
 .border-black {

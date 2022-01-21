@@ -17,9 +17,9 @@
                     <strong>Find your favourite coffee!</strong>
                 </h1>
                 <div class="my-5">
-                    <h4>
-                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
-                    </h4>
+                    <h3>
+                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3"><strong>Shop Now</strong></a>
+                    </h3>
                 </div>
             </div>
         </div>
@@ -28,10 +28,13 @@
 
 {% block page_footer %}
     <footer>
-        <div class="container fixed-bottom footer-container">
-            <div class="row">
+        <div id="footer-banner" class="row text-center">
+
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <ul class="list-inline text-center">
+                        <li>
+                            <p class="copyright text-black text-center">Copyright &copy; {% now "Y" %}</p>
+                        </li>
                         <li class="list-inline-item">
                             <a href="https://twitter.com/" target="_blank">
                                 <span class="fa-stack fa-lg text-black">
@@ -73,10 +76,15 @@
                             </a>
                         </li>
                     </ul>
-                    <hr>
-                    <p class="copyright text-white text-center">Copyright &copy; <span id="copyright"></span></p>
-                </div>
-            </div>
-        </div>
+                </div>               
+           
+         </div>
     </footer>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+        <script>
+            $("#copyright").text(new Date().getFullYear());
+        </script>
 {% endblock %}
