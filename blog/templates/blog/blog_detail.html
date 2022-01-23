@@ -11,33 +11,90 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="product-details-container mb-5 mt-md-5">
-                    <div class="card h-100 border-0">
-                        <div class="card-body pb-0">
-                            <p class="mb-0">{{ post.title }}</p>
-                        </div>
-                    <a href="{% url 'blog_detail' blog_post.slug %}">
-                        <img class="card-img-top img-fluid" src="{{ post.image }}" alt="{{ post.title }}">
+    <div class="row">
+        <div class="col-12 col-sm-10 offset-sm-1 px-sm-0 col-lg-8 offset-lg-2 blog-content">
+            <img class="rounded blog-image" src="{{ blog_post.image.url }}" alt="{{ blog_post.title }}">
+            <h4 class="card-text font-weight-bold mb-0 text-center">{{ blog_post.title }}</h4>
+            <p class="text-muted">{{ blog_post.date_posted }}</p>
+            <!-- https://docs.djangoproject.com/en/dev/ref/templates/builtins/#linebreaksbr -->
+            <p class="blog-post-content mb-2">{{ blog_post.body|linebreaksbr }}</p>
+            <p>
+                <strong>Article by <em>{{ blog_post.author }}</em></strong>
+            </p>
+            <div class="row">
+                <div class="col d-flex flex-wrap justify-content-between">
+                    <a class="btn my-btn mb-3" href="{% url 'blog_posts' %}">
+                        <i class="fas fa-angle-left"></i> Back to Blog
                     </a>
-                    <p class="text-muted">{{ blog_post.date_posted }}</p>
-
-
-
-                    <p class="blog-post-content mb-2">{{ blog_post.body }}</p>
-                    <p>
-                        <strong>Article by {{ blog_post.author }}</strong>
-                    </p>
                     {% if request.user.is_superuser %}
-                        <small class="ml-3">
-                            <a href="">Edit</a> | 
-                            <a class="text-danger" href="">Delete</a>
-                        </small>
+                        <div class="ml3">
+                            <a href="{% url 'edit_post' blog_post.slug %}">Edit</a> | 
+                            <a class="text-danger" href="{% url 'delete_post' blog_post.slug %}">Delete</a>
+                        </div>
                     {% endif %}
                 </div>
-            </div>  
+                <div class="btt-button shadow-sm rounded-0 border border-black">
+                    <a class="btt-link d-flex h-100">
+                        <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+                    </a>	
+                </div>
+            </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-12 col-sm-10 offset-sm-1 px-sm-0 col-lg-8 offset-lg-2 blog-content">
+            <hr>
+            <h5 class="font-weight-bold mb-2">Join the conversation</h5>
+            {% if user.is_authenticated %}
+                <form method="POST">
+                    {% csrf_token %}    
+                    {{ comment_form | crispy }}
+                    <div class="text-right">
+                        <button type="submit" class="btn my-btn mb-3">Post comment</button>
+                    </div>
+                </form>
+            {% else %}
+                <p class="text-center my-3"> You must be a registered user before commenting on our blog posts.
+                    <a href="{% url 'account_signup' %}">Create an account</a> or
+                    <a href="{% url 'account_login' %}"> login here</a>.
+                </p>
+            {% endif %}
+            <h5 class="font-weight-bold mb-2">Comments...</h5>
+            <div class="row">
+                <div class="col-12 col-lg-8 offset-lg-2 pr-lg-0">
+                    {% if comments.count > 0 %}
+                        {% for comment in comments %}
+                            <div class="comment-container p-1 px-2 mb-3">
+                                <p class="mb-0"><strong>{{ comment.username }}</strong> says:</p>
+                                <p class="text-muted small mb-0">{{ comment.date_posted }}</p>
+                                <p class="text-center m-1">"{{ comment.body|linebreaksbr }}"</p>
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        <div class="comment-container p-1 px-2 mb-3">
+                            <p class="text-center m-1">
+                                There are <strong>{{ comments.count }}</strong> comments currently,
+                                be the first to leave a comment above.
+                                {% if not user.is_authenticated %}
+                                    <br><br>
+                                    You must be a registered user before commenting on our blog posts.
+                                    <a href="{% url 'account_signup' %}">Create an account</a> or
+                                    <a href="{% url 'account_login' %}"> login here</a>.
+                                {% endif %}
+                            </p>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript">
+		$('.btt-link').click(function(e) {
+			window.scrollTo(0,0)
+		})
+	</script>
 {% endblock %}

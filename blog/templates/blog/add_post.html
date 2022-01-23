@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center mt-3">
+                <h2 class="logo-font">Blog</h2>
+                <hr class="w-50 mb-1">
+            </div>
+        </div>
+    </div>
+    <form method="POST" action="{% url 'add_post' %}" enctype="multipart/form-data">
+        {% csrf_token %}    
+        <div class="row blog-form">
+            <div class="col-12 col-sm-10 offset-sm-1 col-md-5 offset-md-1 col-lg-4 offset-lg-2">
+                {{ form.title | as_crispy_field }}
+            </div>
+            <div class="col-12 col-sm-10 offset-sm-1 col-md-5 offset-md-0 col-lg-4">
+                {{ form.image | as_crispy_field }}
+            </div>
+            <div class="col-12 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                {{ form.body | as_crispy_field }}
+            </div>
+            <div class="col-12 col-sm-10 offset-sm-1 col-md-5 offset-md-1 col-lg-4 offset-lg-2 mb-3">
+                <a href="{% url 'blog_posts' %}" class="btn my-btn">
+                    <i class="fas fa-angle-left"></i> Back to Blog
+                </a>
+                <button type="submit" class="btn btn-success font-weight-bold">
+                    Add Blog Post
+                </button>
+            </div>
+        </div>
+    </form>  
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script>
+        $('#new-image').change(function() {
+            var file = $('#new-image')[0].files[0];
+            $('#filename').text(`Image selected: ${file.name}`);
+        });
+    </script>
+{% endblock %}

@@ -7,7 +7,7 @@ class BlogForm(forms.ModelForm):
 
     class Meta:
         model = BlogPost
-        fields = '__all__'
+        fields = ('title', 'image', 'body',)
 
     image = forms.ImageField(
         label='Image', required=False, widget=CustomClearableFileInput)
@@ -17,7 +17,7 @@ class BlogForm(forms.ModelForm):
         placeholders = {
             'title': 'Title',
             'image': 'Image',
-            'content': 'Blog Content',
+            'body': 'Blog Content',
         }
 
         self.fields['title'].widget.attrs['autofocus'] = True
@@ -25,7 +25,6 @@ class BlogForm(forms.ModelForm):
             self.fields[field].widget.attrs['placeholder'] = (
                     placeholders[field])
             self.fields[field].widget.attrs['class'] = 'blog-form-input'
-            field.widget.attrs['class'] = 'border-black rounded-0'
 
 
 class CommentForm(forms.ModelForm):
