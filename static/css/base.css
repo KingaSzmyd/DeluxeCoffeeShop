@@ -376,3 +376,11 @@ input[name='q']::placeholder {
     object-position: center;
     height: 330px;
 }
+
+.card-img-bottom {
+    height: 350px;
+}
+
+.card-contact {
+    border: none !important;
+}
