@@ -132,6 +132,12 @@ input[name='q']::placeholder {
 .fa-star {
     color: #F7BD23 !important;
 }
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover !important;
+}
   
 /* ------------------------------- bootstrap toasts */
 
