@@ -1,11 +1,12 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.utils.text import slugify
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
-from .forms import ProductForm
+from .models import Product, Category, ProductComment
+from .forms import ProductForm, ProductCommentForm
 
 # Create your views here.
 
@@ -66,9 +67,28 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    comments = product.comments.all()
+    new_comment = None
+
+    if request.method == 'POST':
+        comment_form = ProductCommentForm(request.POST)
+        if comment_form.is_valid():
+            new_comment = comment_form.save(commit=False)
+            new_comment.post = product
+            new_comment.username = request.user
+            new_comment.save()
+            messages.info(request, 'Your review has been posted!')
+            return redirect(reverse('product_detail', args=[product_id]))
+        else:
+            messages.error(request, 'Failed to post your review. Check that \
+                the post is valid and try again.')
+    else:
+        comment_form = ProductCommentForm()
 
     context = {
         'product': product,
+        'comments': comments,
+        'comment_form': comment_form,
     }
 
     return render(request, 'products/product_detail.html', context)

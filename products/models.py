@@ -40,3 +40,17 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class ProductComment(models.Model):
+    post = models.ForeignKey(Product, on_delete=models.CASCADE,
+                             related_name='comments')
+    username = models.ForeignKey(User, on_delete=models.CASCADE)
+    body = models.TextField(validators=[MaxLengthValidator(200)])
+    date_posted = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-date_posted']
+
+    def __str__(self):
+        return '{} by {}'.format(self.body, self.username)
