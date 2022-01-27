@@ -397,6 +397,11 @@ input[name='q']::placeholder {
     height: 350px;
 }
 
+.card-text {
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
 .card-contact {
     border: none !important;
 }
