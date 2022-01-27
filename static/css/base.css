@@ -133,9 +133,8 @@ input[name='q']::placeholder {
     color: #F7BD23 !important;
 }
 
-.img-fluid {
+#product-img {
     width: 100%;
-    height: 15vw;
     object-fit: cover !important;
 }
   
