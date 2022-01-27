@@ -23,11 +23,11 @@
                 <div class="row">
                     {% for post in posts %}
                         <div class="col-10 offset-1 col-sm-6 offset-sm-0 col-lg-4 text-center mb-3 card-group d-flex flex-column">
-                            <div class="card-blog">
+                            <div class="card">
                                 <a href="{% url 'blog_detail' post.slug %}">
-                                    <img src="{{ post.image.url }}" class="card-img-top rounded" alt="{{ post.title }}">
+                                    <img src="{{ post.image.url }}" class="card-img-top" alt="{{ post.title }}">
                                 </a>
-                                <div class="card-body-blog px-0">
+                                <div class="card-body px-0">
                                     <div class="card-text-group">
                                         <p class="card-text mb-2">
                                             <small class="text-muted">{{ post.date_posted }}</small>
@@ -44,7 +44,7 @@
                     {% endfor %}
                 </div>
             </div>
-        </div>   
+        </div>      
     </div>
     <div class="btt-button shadow-sm rounded-0 border border-black">
         <a class="btt-link d-flex h-100">
