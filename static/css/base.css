@@ -367,10 +367,6 @@ input[name='q']::placeholder {
     border: none;
 }
 
-.card-group>.card {
-    margin-bottom: 0;
-}
-
 .card-body {
     padding-top: 0;
     width: 100%;
@@ -386,6 +382,7 @@ input[name='q']::placeholder {
 
 .blog-image {
     width: 100%;
+    max-height: 300px;
     -o-object-fit: cover;
     object-fit: cover;
     -o-object-position: center;
@@ -393,13 +390,31 @@ input[name='q']::placeholder {
     height: 230px;
 }
 
+.blog-post-content {
+    text-align: justify;
+    font-size: inherit;
+}
+
 .card-img-bottom {
     height: 350px;
+}
+
+.card-text-group {
+    text-align: start;
+    margin-bottom: 0.5rem;
 }
 
 .card-text {
     padding-top: 20px;
     padding-bottom: 5px;
+}
+
+/* max-width sm */
+@media only screen and (max-width: 575px) {
+    .blog-post-content {
+        text-align: center;
+        font-size: 0.9rem;    
+    }
 }
 
 .card-contact {
