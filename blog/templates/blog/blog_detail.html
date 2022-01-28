@@ -67,7 +67,7 @@
                             <div class="comment-container p-1 px-2 mb-3">
                                 <p class="mb-0"><strong>{{ comment.username }}</strong> says:</p>
                                 <p class="text-muted small mb-0">{{ comment.date_posted }}</p>
-                                <p class="text-center m-1">"{{ comment.body|linebreaksbr }}"</p>
+                                <p class="text-center m-1">"{{ comment.body }}"</p>
                             </div>
                         {% endfor %}
                     {% else %}

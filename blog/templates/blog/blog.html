@@ -25,7 +25,7 @@
                         <div class="col-10 offset-1 col-sm-6 offset-sm-0 col-lg-4 text-center mb-3 card-group d-flex flex-column">
                             <div class="card">
                                 <a href="{% url 'blog_detail' post.slug %}">
-                                    <img src="{{ post.image.url }}" class="card-img-top" alt="{{ post.title }}">
+                                    <img src="{{ post.image.url }}" class="card-img-top" id="top-card-blog" alt="{{ post.title }}">
                                 </a>
                                 <div class="card-body px-0">
                                     <div class="card-text-group">
@@ -33,23 +33,17 @@
                                             <small class="text-muted">{{ post.date_posted }}</small>
                                         </p>
                                         <p class="card-text font-weight-bold mb-0">{{ post.title }}</p>
-                                        <p class="card-text small">{{ post.content|truncatechars:150 }}</p>
                                     </div>
                                     <a class="btn my-btn mt-2" href="{% url 'blog_detail' post.slug %}">
                                         Read More...
                                     </a>
                                 </div>
                             </div>
-                        </div>             
+                        </div>           
                     {% endfor %}
                 </div>
             </div>
         </div>      
-    </div>
-    <div class="btt-button shadow-sm rounded-0 border border-black">
-        <a class="btt-link d-flex h-100">
-            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
-        </a>	
     </div>
 {% endblock %}
 

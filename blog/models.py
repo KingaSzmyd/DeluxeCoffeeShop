@@ -11,7 +11,6 @@ class BlogPost(models.Model):
     title = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=100, unique=True)
     image = models.ImageField()
-
     body = models.TextField()
     date_posted = models.DateTimeField(db_index=True, auto_now_add=True)
 
