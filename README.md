@@ -144,7 +144,8 @@ No errors were found when passing through the official (Jigsaw) validator
 * JavaScript - [View](https://jshint.com/)
 * Python - [View](https://extendsclass.com/python-tester.html)
 No errors were found when passing through the [Extendsclass.com](https://extendsclass.com/python-tester.html) validator
-## Testing User Stories from User Experience (UX) Section
+## Testing
+Separate testing document can be found here - [testing documentation]().
 ## Deployment
 ### Heroku 
 The project was deployed to Heroku using the following steps:
