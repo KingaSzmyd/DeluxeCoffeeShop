@@ -135,7 +135,7 @@ input[name='q']::placeholder {
 
 #product-img {
     width: 100%;
-    height: 15vw;
+    height: 260px;
     object-fit: cover !important;
 }
   
