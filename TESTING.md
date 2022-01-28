@@ -189,7 +189,8 @@ Checked that the page is responsive and everything gets displayed correctly at a
 During the process of building the project all elements and every change were testing by using Chrome DevTools at different breakpoints. 
 The responsivness of completed project was also tested by using Chrome DevTools on different devices. 
 
-[The Deluxe Coffee Shop as seen on an iPad](https://github.com/KingaSzmyd/MSP4-DeluxeCoffeeShop/blob/main/media/testing_screens/Ipad.png)
+The Deluxe Coffee Shop as seen on an iPad
+![alt text](media/testing_screens/Ipad.png)
 
 ### Browser compatibility
 I have physically tested my website on the following browsers and devices:
@@ -212,14 +213,16 @@ Safari (desktop and iPhone).
 * Further information gets displayed via a table, which breaks the information up. This means information is always displayed in a clear and informative manner in keeping with the overall style of the site.
 * The product can also be added to the bag from here as the add button along with the quantity adjustment buttons are shown.
 
-[Individual product page.]()
+Individual product page
+![alt text](media/testing_screens/individual_product.png)
 #### "Add items to the bag to purchase at a later point."*
 * Any time that a product is displayed on the site, the user always has the option to add the product to the bag.
 * Every card used throughout the entire site includes the add button along with the quantity adjustment buttons, which add the selected amount of items to the cart.
 #### "Easily view the bag contents and the number of items within it."
 * The bag icon found in the navigation bar acts as a direct link to the cart page and as mentioned before the navigation bar is fixed so this link is always visible.
 * The checkout link at the bottom of the toast will send the user to the bag page.
-[Bag view](https://github.com/KingaSzmyd/MSP4-DeluxeCoffeeShop/blob/main/media/testing_screens/bag.png)
+Bag view
+![alt text](media/testing_screens/bag.png)
 #### "Be given the ability to change the quantity of items within the bag or remove items completely."
 To change quantities of an item is on the bag page, which as touched on above is easy to get to due to the link in the fixed navigation bar.
 * Quantities can be changing by using the quantity adjustment buttons used throughout the site but this time a user will have to click on the update link instead of add.
@@ -262,7 +265,8 @@ To change quantities of an item is on the bag page, which as touched on above is
 * Each input field is clearly labelled.
 * When successfully logged in a success toast will appear welcoming the user.
 * A user is clearly informed if the details provided don’t match.
-[Log In](https://github.com/KingaSzmyd/MSP4-DeluxeCoffeeShop/blob/main/media/testing_screens/login.png)
+Log In
+![alt text](media/testing_screens/login.png)
 #### "A personalised user profile where I can see my order history and set my default delivery information if desired."
 * The link that a user can use to access their profile can be found in the navigation bar.
 * The page is personalised by including their username in the title.
@@ -273,17 +277,20 @@ To change quantities of an item is on the bag page, which as touched on above is
 #### "To read coffee related articles as I’m a regular consumer of coffee and I’d find a blog interesting."
 * Added a blog to the site where coffee related articles and posts can be made. This adds additional purpose to the site making it not just a shop.
 * Each article is previewed on its own card and can be clicked upon to open the article to read.
-[Blog](https://github.com/KingaSzmyd/MSP4-DeluxeCoffeeShop/blob/main/media/testing_screens/blog.png)
+Blog
+![alt text](media/testing_screens/blog.png)
 #### "The ability to comment and interact with other users on the products / blog posts."
 * At the bottom of every individual product cart / blog article there is a comments section where registered users can post questions, thoughts and opinions on the article.
 * Comments made on the product / article are available for all to see.
 * The functionality to comment is only available to registered users though. Unregistered users are provided with links to register or sign in here to encourage them to do so.
 * A toast message will appear to confirm if the comment has been posted or not.
-[Blog comments](https://github.com/KingaSzmyd/MSP4-DeluxeCoffeeShop/blob/main/media/testing_screens/comments.png)
+Blog comments
+![alt text](media/testing_screens/comments.png)
 #### "The ability to interact with the store via social media."
 * At the bottom of home page there are five icons redirected to the chosen social media"
 * The social media pages will open in the new window tab.
-[Social media](https://github.com/KingaSzmyd/MSP4-DeluxeCoffeeShop/blob/main/media/testing_screens/social_media.png)
+Social media
+![alt text](media/testing_screens/social_media.png)
 3. As the site owner / admin I want:
 #### "The ability to add new products to the store." / "The ability to create and post new articles to the blog."
 * Adding either a new product or blog post is done via a form.
