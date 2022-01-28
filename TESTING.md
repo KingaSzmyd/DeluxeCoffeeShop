@@ -1,5 +1,5 @@
 # Deluxe Coffee Shop - Testing
-The live site can be viewed here - [Deluxe Coffee Shop](https://msp4-deluxecoffeeshop.herokuapp.com/)).
+The live site can be viewed here - [Deluxe Coffee Shop](https://msp4-deluxecoffeeshop.herokuapp.com/).
 
 [Back to README file](https://github.com/KingaSzmyd/MSP4-DeluxeCoffeeShop/blob/main/README.md).
 
@@ -51,6 +51,7 @@ Loads the products page and shows products that match the search. Submiting an e
 * Check that the edit and delete buttons appear for admin only.
 * Checked the edit product button opens the edit product form.
 * Checked the delete product button triggers the deletion modal.
+* Checked the comment product form is working correctly.
 14. Bag:
 * Checked that at the top of the page a banner informing the user how much more they need to spend to qualify for free delivery shows (if applicable).
 * Checked that if items in the cart equate to over €50 then the user is informed they’ve qualified for free delivery.
@@ -195,97 +196,99 @@ I have physically tested my website on the following browsers and devices:
 Chrome (desktop and iPhone).
 Safari (desktop and iPhone).
 ### User Stories
-1. As a shopper I'd like to:
-"View a selection of products and select those I want to purchase."
+1. As a shopper / user I'd like to:
+#### "View a selection of products and select those I want to purchase."*
 * The products page is accessible to all users, registered or not.
 * Links to view products can be found in the navigation bar, which can be seen at all times.
 * There is the call-to-action button placed on the home page redirecting the user to the products page.
 * Any time that a product is displayed, the user always has the option to add the product to the bag if they wish to purchase it.
-"Filter products based on their type or where they originate from."
+#### "Filter products based on their type or where they originate from."
 * The products can be filtered by their price, name or rating using the filters found in the dropdown menu via the navigation bar
-"To search for products by using keywords."
+*"To search for products by using keywords."*
 * The search bar can be found in the navigation bar, which can be seen at all times. On smaller devices it toggles using a button with a magnifying glass icon, which makes it apparent to what it is.
 * The search is conducted on all products names, type and their description and any matches are shown accordingly.
-"Look at individual product details in order to consolidate my decision on whether to purchase the item or not."
+#### "Look at individual product details in order to consolidate my decision on whether to purchase the item or not."
 * Every product has its own page that gives further information on the product. The pages are accessed via the products card, which are seen throughout. The image is the link.
 * Further information gets displayed via a table, which breaks the information up. This means information is always displayed in a clear and informative manner in keeping with the overall style of the site.
 * The product can also be added to the bag from here as the add button along with the quantity adjustment buttons are shown.
 
 [Individual product page.]()
-
-"Add items to the bag to purchase at a later point."
+#### "Add items to the bag to purchase at a later point."*
 * Any time that a product is displayed on the site, the user always has the option to add the product to the bag.
 * Every card used throughout the entire site includes the add button along with the quantity adjustment buttons, which add the selected amount of items to the cart.
-"Easily view the bag contents and the number of items within it."
+#### "Easily view the bag contents and the number of items within it."
 * The bag icon found in the navigation bar acts as a direct link to the cart page and as mentioned before the navigation bar is fixed so this link is always visible.
 * The checkout link at the bottom of the toast will send the user to the bag page.
-"Be given the ability to change the quantity of items within the bag or remove items completely."
+#### "Be given the ability to change the quantity of items within the bag or remove items completely."
 To change quantities of an item is on the bag page, which as touched on above is easy to get to due to the link in the fixed navigation bar.
 * Quantities can be changing by using the quantity adjustment buttons used throughout the site but this time a user will have to click on the update link instead of add.
 * A toast message appears confirming this alteration.
 * Items can be completely removed from the bag by clicking the remove link. The bag page is the only place items can be removed from the bag.
 * A toast message appears confirming the removal.
-"Be rewarded with free delivery, when buying a decent amount of products."
+#### "Be rewarded with free delivery, when buying a decent amount of products."
 * There is a banner at the navigation bar stating that the customer gets free delivery on orders over €50.
 * Additionally when an item is added a toast message will appear confirming this addition as we've established. At the bottom of this toast a message is shown stating how much the user needs to spend to qualify for free delivery.
-"Checkout, pay and complete my order easily."
+#### "Checkout, pay and complete my order easily."
 * On the checkout page the order is summarised so that the user is shown what is ordering.
 * Adding personal, delivery and payment details is done via a user friendly form.
 * Successful completion of the order redirected to their order confirmation page.
-"Have order confirmation once my order has been completed."
+#### "Have order confirmation once my order has been completed."
 * Successful completion of an order the user is automatically redirected to the order success page. This page confirms and shows all the information that the user has just inputted as part of the order.
 * A success toast message also appears confirming successful completion of the order.
 * On top of this an email confirmation is sent out to the email address provided.
 * This has been tested as part of my manual testing.
-2. 
-"Navigate around the site easily and the site to be user friendly."
+#### "Navigate around the site easily and the site to be user friendly."
 * The fixed navigation bar so that links are available at the top of every page and at any point.
 * This is also the case on smaller devices but the links get placed into a dropdown menu, which is operational by toggling.
-"Receive feedback whilst interacting with the site."
+#### "Receive feedback whilst interacting with the site."
 * Toast messages appear in the top right of the screen when information needs to be relayed to the user such as when a function has been performed or something has gone wrong.
 * Validation messages appear on forms fields when input is invalid or incorrect.
-"To sign up and register for an account easily."
+#### "To sign up and register for an account easily."
 * The link to register can be found in the navigation bar.
 * Registering is as simple as inputting an email address, username and password.
 * For security the password needs to be re-typed.
 * A user is clearly informed if the username is in use or if the passwords don’t match.
 * All registrations will require email verification to confirm the user is who they say they are.
 * An email asking the user to verify themselves via a link is sent to the email address provided.
-"To receive email confirmation of registration and have the ability to recover forgotten passwords."
+#### "To receive email confirmation of registration and have the ability to recover forgotten passwords."
 * Email confirmations are sent to verify and confirm registration to The Deluxe Coffee Shop as mentioned above.
 * Used Django allauth to handle user registration, logging in, logging out and verifying accounts etc it also handles other account functionality such as resetting lost passwords.
 * When the forgot password link is clicked the user is asked to enter an email address and if it matches one that’s associated with a user in the database then they are sent a reset link to create a new password.
 * Django allauth handles all this really well and in a very user friendly manner.
-"To login and logout easily."
+#### "To login and logout easily."
 * The link to login can be found in the navigation bar.
 * The logging in process is just as simple as registering with only a username or email address being required along with a password.
 * Each input field is clearly labelled.
 * When successfully logged in a success toast will appear welcoming the user.
 * A user is clearly informed if the details provided don’t match.
-"A personalised user profile where I can see my order history and set my default delivery information if desired."
+#### "A personalised user profile where I can see my order history and set my default delivery information if desired."
 * The link that a user can use to access their profile can be found in the navigation bar.
 * The page is personalised by including their username in the title.
 * The order number here also acts as a link to the order confirmation.
 * Saved delivery information can be inputted or is shown via a form on the page.
 * Any information inputted and updated here overrides the users default delivery information where it is used in instances such as when checking out.
 * The information shown here can get overridden as part of the checkout process if the user selects to save their information via the checkbox.
-"To read coffee related articles as I’m a regular consumer of coffee and I’d find a blog interesting."
+#### "To read coffee related articles as I’m a regular consumer of coffee and I’d find a blog interesting."
 * Added a blog to the site where coffee related articles and posts can be made. This adds additional purpose to the site making it not just a shop.
 * Each article is previewed on its own card and can be clicked upon to open the article to read.
-"The ability to comment and interact with other users on the blog posts."
-* At the bottom of every blog article there is a comments section where registered users can post questions, thoughts and opinions on the article.
-* Comments made on the article are available for all to see.
+#### "The ability to comment and interact with other users on the products / blog posts."
+* At the bottom of every individual product cart / blog article there is a comments section where registered users can post questions, thoughts and opinions on the article.
+* Comments made on the product / article are available for all to see.
 * The functionality to comment is only available to registered users though. Unregistered users are provided with links to register or sign in here to encourage them to do so.
 * A toast message will appear to confirm if the comment has been posted or not.
+#### "The ability to interact with the store via social media."
+* At the bottom of home page there are five icons redirected to the chosen social media"
+* The social media pages will open in the new window tab.
+[Social media]()
 3. As the site owner / admin I want:
-"The ability to add new products to the store." / "The ability to create and post new articles to the blog."
+#### "The ability to add new products to the store." / "The ability to create and post new articles to the blog."
 * Adding either a new product or blog post is done via a form.
 * The links to access both forms are shown in the navigation bar by clicking the profile link / icon and selecting them from the dropdown menu.
 * These links are only visible to admin.
 * The pages are only accessible by admin.
 * Each input field is clearly labelled and includes a placeholder. 
 * Successful completion we get sent to the newly created page and the product/article can be viewed on the site.
-"To be able to edit and remove products from the store." / "To be able to edit and remove existing posts from the blog."
+#### "To be able to edit and remove products from the store." / "To be able to edit and remove existing posts from the blog."
 * As with adding products and blog posts, editing and removing them can only be done by admin with access to the relevant forms and functionality restricted.
 * To access the edit and delete function of a product, admin needs to navigate to the product detail page of the item and the relevant call-to-action buttons will be shown under the table as shown below.
 * To access the edit and delete function of a blog post, admin needs to navigate to the blog post in question and the edit and delete buttons will be shown underneath the article.
