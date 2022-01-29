@@ -160,11 +160,11 @@ You can clone a repository so that it can be worked on locally by following step
 ## Credits
 ### Code 
 * [Bootstrap](https://getbootstrap.com/) - liberies used through all pages to style elements: navigation bar, conatiners, overlay, buttons, cards and forms.
-* [Code Institute](codeinstitute.net/) - lessons from chapter "Full Stack Frameworks with Django" were used to create this project.
+* [Code Institute](https://codeinstitute.net/) - lessons from chapter "Full Stack Frameworks with Django" were used to create this project.
 * [Stackoverflow](https://stackoverflow.com/) - hints used to fixing some of the pylint comments.
-* [Djangocentral.com]https://djangocentral.com/building-a-blog-application-with-django/ -  used to create a blog section.
-* [Youtube.com]https://www.youtube.com/watch?v=hZrlh4qU4eQ - used to create blog posts and comments models.
-* [Skysilk.com]https://www.skysilk.com/blog/2017/how-to-make-a-blog-with-django/ - used to create a blog section.
+* [Djangocentral.com](https://djangocentral.com/building-a-blog-application-with-django/) -  used to create a blog section.
+* [Youtube.com](https://www.youtube.com/watch?v=hZrlh4qU4eQ) - used to create blog posts and comments models.
+* [Skysilk.com](https://www.skysilk.com/blog/2017/how-to-make-a-blog-with-django/) - used to create a blog section.
 * [Css-tricks.com](https://css-tricks.com/almanac/properties/o/object-fit/) - used to solve some style issues with displaying images 
 * [Geteasyqa.com](https://geteasyqa.com/qa/test-website/) - used to make a testing documentation for the website.
 ### Content
