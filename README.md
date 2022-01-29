@@ -4,35 +4,35 @@
 Deluxe Coffee Shop is an e-commerce store selling coffees and coffee equpiments. The website was created for the people passionated in coffee and would like to find everything in one place. The online shop offers products from different brands and it's aim is to encourage people to easy and friendly e-shopping.
 
 ## User stories
-### As a shopper I want to be able:
-1. *View a list of products, so I can select some to purchase.
-2. *View individual product details, so I can identify the price, description, product rating, product image and product sizes and also previous customers reviews.
-3. *Easily view total of my purchases at any time, so I can avoid spending too much money.
-4. *Sort the list of available products, so I can easily identify best rated, best priced and categorically sorted products.
-5. *Sort a specyfic category of product, so I can find best-rated or best-priced products in a specific category or sort the products in that category by name.
-6. *Sort multiple categories of products simultaneously, so I can find best-rated or best-priced products across broad categories such as 'coffee' or 'equipment'.
-7. *Search for the product by name or description, so I can find a specific product I'd like to purchase.
+### As a shopper / user I want to be able:
+1. View a list of products, so I can select some to purchase.
+2. View individual product details, so I can identify the price, description, product rating, product image and product sizes and also previous customers reviews.
+3. Easily view total of my purchases at any time, so I can avoid spending too much money.
+4. Sort the list of available products, so I can easily identify best rated, best priced and categorically sorted products.
+5. Sort a specyfic category of product, so I can find best-rated or best-priced products in a specific category or sort the products in that category by name.
+6. Sort multiple categories of products simultaneously, so I can find best-rated or best-priced products across broad categories such as 'coffee' or 'equipment'.
+7. Search for the product by name or description, so I can find a specific product I'd like to purchase.
 8. Easily see what I have searched for and the numbers of results, so I can quickly decide whether product I want is available.
-9. *Easily select the size and quantity of a product, when purchasing it, so I can ensure I don't accidentally select the wrong product or quantity.
-10. *View items in my bag to be purchased, so I can identify the total cost of my purchase and all items I will recive. 
-11. *Adjust the quantity of individual items in my bag, so I can easily make changes to my purchases before checkout.
-12. *Easily enter my payment information, so I can check out quickly and with no hassies.
-13. *Feel my personal and payment information are safe and secure, so I can confidently provide the needed information to make a purchase. 
-14. *View an order confirmation after checkout, so I can verify that I haven't made any mistakes. 
-15. *Recive an email confirmation after checking out, so I can keep the confirmation of what I have purchased for my records.
+9. Easily select the size and quantity of a product, when purchasing it, so I can ensure I don't accidentally select the wrong product or quantity.
+10. View items in my bag to be purchased, so I can identify the total cost of my purchase and all items I will recive. 
+11. Adjust the quantity of individual items in my bag, so I can easily make changes to my purchases before checkout.
+12. Easily enter my payment information, so I can check out quickly and with no hassies.
+13. Feel my personal and payment information are safe and secure, so I can confidently provide the needed information to make a purchase. 
+14. View an order confirmation after checkout, so I can verify that I haven't made any mistakes. 
+15. Recive an email confirmation after checking out, so I can keep the confirmation of what I have purchased for my records.
 ### As a site visitor I want to be able:
-1. *Easily register for an account, so I can have a personal account and be able to view my profile.
-2. *Easily log in or log out, so I can access my personal account information 
-3. *Easily recover my password, in case I forgot it, so I can recover access to my account.
-4. *Recive an email confirmation after registering, so I can verify that my account registration was successful.
-5. *Have a personalize user profile, so I can view my personal order history and order confirmations, and save my payment information.
-6. *Have a possibilities to visit Deluxe Coffee Shop social media, so I can connect with the "coffee lovers" sociaty.
-7. *Have an access to articles posted on blog and possibilities to comment them, so I can read an interesting articles and share my opinions with others.
-### As a shop owner I want to be able:
-1. *Add a product, so I can add new items to my store.
-2. *Edit/update a product, so I can change product prices, descriptions, images and other product criteria.
-3. *Delete a product, so I can remove items, that are no longer for sale.  
-4. *Add/Edit and Delete posts on the blog, so I can moderate the blog. 
+1. Easily register for an account, so I can have a personal account and be able to view my profile.
+2. Easily log in or log out, so I can access my personal account information 
+3. Easily recover my password, in case I forgot it, so I can recover access to my account.
+4. Recive an email confirmation after registering, so I can verify that my account registration was successful.
+5. Have a personalize user profile, so I can view my personal order history and order confirmations, and save my payment information.
+6. Have a possibilities to visit Deluxe Coffee Shop social media, so I can connect with the "coffee lovers" sociaty.
+7. Have an access to articles posted on blog and possibilities to comment them, so I can read an interesting articles and share my opinions with others.
+### As a shop owner / admin I want to be able:
+1. Add a product, so I can add new items to my store.
+2. Edit/update a product, so I can change product prices, descriptions, images and other product criteria.
+3. Delete a product, so I can remove items, that are no longer for sale.  
+4. Add/Edit and Delete posts on the blog, so I can moderate the blog. 
 ## Design
 ### Colour Scheme
 The main colours used are: white, black, #555, #fafafa and #977720.
@@ -41,13 +41,13 @@ The main colours used are: white, black, #555, #fafafa and #977720.
 ### Imagery
 Imagery is important. The large, background hero image is used to be striking and catch the user's attention. Additionally all the products in the e-commerce shop are having images, the same like the blog posts. 
 ## Wireframes
-* Home Page Wireframe - [View]()
-* Tablet Wireframe - [View]()
-* Mobile Wireframe - [View]()
+* Home Page Wireframe - [View](https://github.com/KingaSzmyd/MSP4-DeluxeCoffeeShop/blob/main/media/wireframes/deluxeCoffeeShop_Main.jpg)
+* Tablet Wireframe - [View](https://github.com/KingaSzmyd/MSP4-DeluxeCoffeeShop/blob/main/media/wireframes/deluxeCoffeeShop_Ipad.jpg)
+* Mobile Wireframe - [View](https://github.com/KingaSzmyd/MSP4-DeluxeCoffeeShop/blob/main/media/wireframes/deluxeCoffeeShop_Iphone.jpg)
 ## Features
 ### Responsivness 
 The page is responsive at all breakpoints. By using a combination of media queries, Bootstrap’s responsive grid and built in flexbox capabilities means the sites layout remains consistent while the content adapts to the device it’s being viewed on.
-Icons representing the social media links appear in the footer on the front page. Each icon is associated with the intended destination and clicking them will send the user there via a new window or tab.
+
 ### Navigation 
 A fixed navigation bar means that links to any other section of the website and are accessible at any point for easier navigation.
 The Deluxe Coffee Shop - logo has a secondary feature as a link back to the home page. All other links are where a user would expect to find them making for good UX. The search bar is always accessible in the navigation bar. 
@@ -65,6 +65,7 @@ Filters can be applied through the products page or search button in the navigat
 Results can be sorted by numerous options by using the dropdown filter at the top of the products page. This helps users find what they want as quickly as possible. Products are shown as cards when numerous results are being shown. 
 Individual product pages show all the information about the product: description, price, rating, size.
 Items can be added and removed to a bag by registered users. 
+Registered users have also possibilities to leave review of the product, that will be seen also for the other users. The review will be displayed directly below the individual product card.
 ### The checkout process
 The delivery banner that’s displayed at the top of the bag page informs the user how much more they need to spend in order to get free delivery. This may nudge customers towards ordering a couple more products in order to qualify.
 Quantities of items can be adjusted in the cart by using the quantity selector buttons along with the update and remove links.
@@ -82,9 +83,9 @@ Every user is assigned to profile page on registration. Order history will appea
 ### Adding, editing and deleting
 Only admin can add, edit and delete products or blog posts. Some of the fields are required in order to submit a form, validation messages will appear to help with input if needed.
 ### Features Left to implement
-* I would like to ...
-* I would like to ....
-* I would like to ...
+* I would like to give the users the opportunity to rating the products.
+* I would like to give users the possibility to add unavailable product to wish list and send information, when product will be available on the stock.
+* I would like to give the opportunity to use contact form and read the Q&A answers.
 ## Technologies Used
 ### Languages Used
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -125,16 +126,7 @@ Only admin can add, edit and delete products or blog posts. Some of the fields a
 15. Google fonts. 
 * Montserrat was imported and used throughout.
 ## Testing
-1.  Browsers:
-* [Google Chrome](https://msp3-sweet-life.herokuapp.com/)
-* [Safari](https://msp3-sweet-life.herokuapp.com)
-2. Devices:  
-* The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7/8, iPhone 11 & iPhoneX.
-* A large amount of testing was done to ensure that all pages were linking correctly.
-3. Other: 
-* Friends and family members were asked to review the site, set up their accounts and add recipes to point out any bugs and/or user experience issues and check the funcionality of the page.
-4. Bugs:
-### Unfixed Bugs
+The file contains separate testing documentation is available [here].(https://github.com/KingaSzmyd/MSP4-DeluxeCoffeeShop/blob/main/TESTING.md).
 ## Validator Testing
 The W3C Markup Validator, W3C CSS Validator Services, JSHint ... were used to validate every page of the project to ensure there were no syntax errors in the project.
 * HTML - [View](https://validator.w3.org/)
@@ -144,8 +136,6 @@ No errors were found when passing through the official (Jigsaw) validator
 * JavaScript - [View](https://jshint.com/)
 * Python - [View](https://extendsclass.com/python-tester.html)
 No errors were found when passing through the [Extendsclass.com](https://extendsclass.com/python-tester.html) validator
-## Testing
-Separate testing document can be found here - [testing documentation]().
 ## Deployment
 ### Heroku 
 The project was deployed to Heroku using the following steps:
@@ -157,21 +147,41 @@ The project was deployed to Heroku using the following steps:
 6. Deply the GitHub branch "main".
 7. [Deployed Website](https://msp4-deluxecoffeeshop.herokuapp.com/) 
 ### Cloning
+You can clone a repository so that it can be worked on locally by following steps:
+1. Log in to [GitHub](https://github.com/) and navigate to the repository you wish to clone.
+2. Click the button that reads code. This button is situated to the left of the green Gitpod button near the top of the page.
+3. To clone the repository using HTTPS, copy the link shown whilst HTTPS is selected. The link will look something like this: https://github.com/your-usernam/your-repository-name
+4. Open your local IDE and in the terminal navigate to the working directory of where you wish to insert the cloned directory.
+5. Type git clone followed by the link you copied in step 3 into the terminal.
+6. A new env.py file will have to be created to include all the environment variables.
+7. You need to reinstall all the dependencies used, you can do this by running the following pip3 install -r requirements.txt in the terminal.
+8. Than  migrate the database by typing python3 manage.py migrate in the terminal.
+9. A new superuser will now need to be created, this can be done by typing python3 manage.py createsuperuser in the terminal and following the instructions shown.
+10. Use the command python3 manage.py runserver to run the clone website.
 ## Credits
 ### Code 
-* [Bootstrap](https://getbootstrap.com/) - liberies used through all pages to style elements: navigation bar, callout, buttons, cards and forms.
+* [Bootstrap](https://getbootstrap.com/) - liberies used through all pages to style elements: navigation bar, conatiners, overlay, buttons, cards and forms.
 * [Code Institute]
 * [Stackoverflow](https://stackoverflow.com/) - hints used to fixing some of the pylint comments.
-BLOG: 
-* [Djangocentral.com]https://djangocentral.com/building-a-blog-application-with-django/
-* [Youtube.com]https://www.youtube.com/watch?v=hZrlh4qU4eQ
-* [Skysilk.com]https://www.skysilk.com/blog/2017/how-to-make-a-blog-with-django/
+* [Djangocentral.com]https://djangocentral.com/building-a-blog-application-with-django/ -  used to create a blog section.
+* [Youtube.com]https://www.youtube.com/watch?v=hZrlh4qU4eQ - used to create blog posts and comments models.
+* [Skysilk.com]https://www.skysilk.com/blog/2017/how-to-make-a-blog-with-django/ - used to create a blog section.
+* [Css-tricks.com](https://css-tricks.com/almanac/properties/o/object-fit/) - used to solve some style issues with displaying images 
+* [Geteasyqa.com](https://geteasyqa.com/qa/test-website/) - used to make a testing documentation for the website.
 ### Content
 * [Wikipedia](https://www.wikipedia.org/)
-* [Agiboo.com](https://www.agiboo.com › 16-interesting-facts-about-co...)  
-* [Ncausa.org](https://www.ncausa.org/About-Coffee/How-to-Brew-Coffee)
-* [Nytimes.com](https://www.nytimes.com/2020/02/13/style/self-care/coffee-benefits.html)
+* [Agiboo.com](https://www.agiboo.com/)  
+* [Ncausa.org](https://www.ncausa.org/)
+* [Nytimes.com](https://www.nytimes.com/)
+* [Theconversation.com](https://theconversation.com/)
+* [Goodhousekeeping.com](https://www.goodhousekeeping.com/)
+* [Dealsonhealth.net](https://dealsonhealth.net/)
 * [Font Awsome](https://fontawesome.com/)
 ### Media
 * [Unsplash](https://unsplash.com/)
 ## Acknowledgements
+1. My mentor Brian Macharia for all the feedback and aiding in the planning and execution of this project.
+2. Tutor support at Code Institute for their help and support.
+3. README and Blog examples:
+* [mitchdavenport88](https://github.com/mitchdavenport88/hop_shop/blob/main/README.md)
+* [taikatta](https://github.com/taikatta/Mileston4-EggSellNT/blob/master/README.md)

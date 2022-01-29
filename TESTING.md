@@ -200,7 +200,7 @@ I have physically tested my website on the following browsers and devices:
 ![alt text](media/testing_screens/Iphone.png)
 
 ### User Stories
-1. As a shopper / user I'd like to:
+1. As a shopper / user /site visitor I'd like to:
 #### "View a selection of products and select those I want to purchase."
 * The products page is accessible to all users, registered or not.
 * Links to view products can be found in the navigation bar, which can be seen at all times.
