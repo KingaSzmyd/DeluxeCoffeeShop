@@ -93,12 +93,13 @@ Only admin can add, edit and delete products or blog posts. Some of the fields a
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 * [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 ### Databases
-* Postgres – Production database provided via Heroku.
+* [PostgreSQL](https://www.postgresql.org/) database service provided directly by Heroku.
+* [SQlite3](https://www.sqlite.org/index.html) - database provided by Django.
 ### Frameworks, Libraries & Programs Used
 1. [Bootstrap 4.4.1](https://getbootstrap.com/):
 * Bootstrap was used to assist with the responsiveness and styling of the website.
-2. [Django]:
-* Python web framework with external libraries.External libraries are visible in the requirements.txt file.
+2. [Django](https://www.djangoproject.com/):
+* Python web framework with external libraries. External libraries are visible in the requirements.txt file.
 3.	[JSON](https://en.wikipedia.org/wiki/JSON):
 * JSON was used to create a data format.
 4.	[Font Awesome](https://fontawesome.com/):
@@ -109,24 +110,22 @@ Only admin can add, edit and delete products or blog posts. Some of the fields a
 * Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 7.	[GitHub](https://github.com/):
 * GitHub is used to store the projects code after being pushed from Git.
-8.	AWS S3 Bucket. 
+8.	[AWS S3 Bucket](https://aws.amazon.com/): 
 * Cloud storage for media and static files used by Heroku.
-9. Stripe. 
+9. [Stripe](https://www.stripe.com/): 
 * Online payment processing for internet businesses used to receive payments.
-10. Gmail. 
-* I've hooked my deployed site up to Gmail's smtp server in order to send emails.
+10. [Gmail](https://gmail.com/):
+* The website was hooked up to Gmail's in order to send emails.
 11.	[Balsamiq](https://balsamiq.com/):
 * Balsamiq was used to create the wireframes during the design process.
-12.	[Techsini.com](https://techsini.com/):
+12.	[Websitemockupgenerator.com](https://websitemockupgenerator.com/):
 * Multi Device Website Mockup Generator that helps with creating mockups of the website and allows to check its responsivness at different devices.
-13. [Flask](https://en.wikipedia.org/wiki/Flask_(web_framework)):
-* Flask was used to create the project app in the Python.
-14. [Heroku](https://www.heroku.com/):
+13. [Heroku](https://www.heroku.com/):
 * Heroku was used to deploy the project.
-15. Google fonts. 
-* Montserrat was imported and used throughout.
+15. [Google fonts](https://fonts.google.com/): 
+* Roboto was imported and used throughout the site.
 ## Testing
-The file contains separate testing documentation is available [here].(https://github.com/KingaSzmyd/MSP4-DeluxeCoffeeShop/blob/main/TESTING.md).
+The file contains separate testing documentation is available [here](https://github.com/KingaSzmyd/MSP4-DeluxeCoffeeShop/blob/main/TESTING.md).
 ## Validator Testing
 The W3C Markup Validator, W3C CSS Validator Services, JSHint ... were used to validate every page of the project to ensure there were no syntax errors in the project.
 * HTML - [View](https://validator.w3.org/)
@@ -161,7 +160,7 @@ You can clone a repository so that it can be worked on locally by following step
 ## Credits
 ### Code 
 * [Bootstrap](https://getbootstrap.com/) - liberies used through all pages to style elements: navigation bar, conatiners, overlay, buttons, cards and forms.
-* [Code Institute]
+* [Code Institute](codeinstitute.net/) - lessons from chapter "Full Stack Frameworks with Django" were used to create this project.
 * [Stackoverflow](https://stackoverflow.com/) - hints used to fixing some of the pylint comments.
 * [Djangocentral.com]https://djangocentral.com/building-a-blog-application-with-django/ -  used to create a blog section.
 * [Youtube.com]https://www.youtube.com/watch?v=hZrlh4qU4eQ - used to create blog posts and comments models.
