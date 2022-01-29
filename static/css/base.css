@@ -135,7 +135,7 @@ input[name='q']::placeholder {
 
 .card-img-top {
     width: 100%;
-    height: 260px;
+    height: 280px;
     object-fit: cover !important;
 }
   
