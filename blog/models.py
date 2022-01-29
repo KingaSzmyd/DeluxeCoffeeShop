@@ -1,3 +1,4 @@
+""" Import from the Django database """
 from django.db import models
 from django.core.validators import MaxLengthValidator
 from django.contrib.auth.models import User
@@ -6,6 +7,7 @@ from django.contrib.auth.models import User
 
 
 class BlogPost(models.Model):
+    """ The Blog post model """
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='blog_post')
     title = models.CharField(max_length=100, unique=True)
@@ -15,13 +17,16 @@ class BlogPost(models.Model):
     date_posted = models.DateTimeField(db_index=True, auto_now_add=True)
 
     class Meta:
+        """ The blog posts displaying ordering """
         ordering = ['-date_posted']
-  
+
     def __str__(self):
-        return self.title
-        
+        """ Function returning to the Blog post """
+        return str(self.title)
+
 
 class Comment(models.Model):
+    """ The comments model"""
     post = models.ForeignKey(BlogPost, on_delete=models.CASCADE,
                              related_name='comments')
     username = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -29,7 +34,9 @@ class Comment(models.Model):
     date_posted = models.DateTimeField(auto_now_add=True)
 
     class Meta:
+        """ The comments displaying ordering """
         ordering = ['-date_posted']
 
     def __str__(self):
         return '{} by {}'.format(self.body, self.username)
+        # pylint: disable=consider-using-f-string

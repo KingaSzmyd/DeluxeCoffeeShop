@@ -1,11 +1,13 @@
+""" Import form, models and widgets """
 from django import forms
 from products.widgets import CustomClearableFileInput
 from .models import BlogPost, Comment
 
 
 class BlogForm(forms.ModelForm):
-
+    """ The Blog form model """
     class Meta:
+        """ The Blog form contains """
         model = BlogPost
         fields = ('title', 'image', 'body',)
 
@@ -13,6 +15,10 @@ class BlogForm(forms.ModelForm):
         label='Image', required=False, widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
+        """
+        Function sets placeholders, adds auto-focus to top field
+        and assigns all fields a class
+        """
         super().__init__(*args, **kwargs)
         placeholders = {
             'title': 'Title',
@@ -28,8 +34,9 @@ class BlogForm(forms.ModelForm):
 
 
 class CommentForm(forms.ModelForm):
-
+    """ The comment form model """
     class Meta:
+        """ The comment form contains """
         model = Comment
         fields = ('body',)
 

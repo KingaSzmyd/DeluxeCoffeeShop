@@ -1,3 +1,4 @@
+""" Import from Django libraries """
 from django.urls import path
 from . import views
 

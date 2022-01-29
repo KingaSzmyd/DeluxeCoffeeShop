@@ -1,7 +1,8 @@
+""" Import functions from the Django libraries """
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
 from django.utils.text import slugify
-from django.contrib.auth.decorators import login_required 
+from django.contrib.auth.decorators import login_required
 
 from .models import BlogPost
 from .forms import BlogForm, CommentForm
