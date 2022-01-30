@@ -1,11 +1,11 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.utils.text import slugify
+
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category, ProductComment
+from .models import Product, Category
 from .forms import ProductForm, ProductCommentForm
 
 # Create your views here.
@@ -34,7 +34,7 @@ def all_products(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
-    
+
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
@@ -114,7 +114,7 @@ def add_product(request):
                 'Failed to add product. Please ensure the form is valid.')
     else:
         form = ProductForm()
-      
+
     template = 'products/add_product.html'
     context = {
         'form': form,

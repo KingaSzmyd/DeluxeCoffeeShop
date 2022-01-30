@@ -12,7 +12,7 @@ from .forms import BlogForm, CommentForm
 
 def blog_posts(request):
     """ A view to return the main blog page """
-    posts = BlogPost.objects.all()
+    posts = BlogPost.objects.all()  # pylint: disable=no-member
     context = {
         'posts': posts,
     }
@@ -96,6 +96,7 @@ def edit_post(request, slug):
         form = BlogForm(request.POST, request.FILES, instance=blog_post)
         if form.is_valid():
             edit_post = form.save(commit=False)
+            # pylint: disable=redefined-outer-name
             edit_post.author = request.user
             edit_post.slug = slugify(edit_post.title)
             form.save()

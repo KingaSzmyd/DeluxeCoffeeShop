@@ -1,13 +1,17 @@
+""" Import django libraries and app models """
 from django.contrib import admin
+# import from checkout models
 from .models import Order, OrderLineItem
 
 
 class OrderLineItemAdminInline(admin.TabularInline):
+    """ Return the tabular inline admin to manage the order """
     model = OrderLineItem
     readonly_fields = ('lineitem_total',)
 
 
 class OrderAdmin(admin.ModelAdmin):
+    """ Return the admin model """
     inlines = (OrderLineItemAdminInline,)
 
     readonly_fields = ('order_number', 'date',
