@@ -3,7 +3,7 @@ The live site can be viewed here - [Deluxe Coffee Shop](https://msp4-deluxecoffe
 
 [Back to README file](https://github.com/KingaSzmyd/MSP4-DeluxeCoffeeShop/blob/main/README.md).
 
-![alt text](media/all-devices-black.png)
+![alt text](media/testing_screens/all-devices-black.png)
 
 ## Manual testing 
 ### Navigation:
@@ -217,7 +217,7 @@ I have physically tested my website on the following browsers and devices:
 * The product can also be added to the bag from here as the add button along with the quantity adjustment buttons are shown.
 
 ##### Individual product page
-![alt text](media/testing_screens/individual_product.png)
+![alt text](media/testing_screens/individial_product.png)
 #### "Add items to the bag to purchase at a later point."*
 * Any time that a product is displayed on the site, the user always has the option to add the product to the bag.
 * Every card used throughout the entire site includes the add button along with the quantity adjustment buttons, which add the selected amount of items to the cart.

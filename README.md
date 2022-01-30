@@ -1,6 +1,6 @@
 # Deluxe Coffee Shop
 [View life project here](https://msp4-deluxecoffeeshop.herokuapp.com/)
-![alt text](media/all-devices-black.png)
+![alt text](media/testing_screens/all-devices-black.png)
 Deluxe Coffee Shop is an e-commerce store selling coffees and coffee equpiments. The website was created for the people passionated in coffee and would like to find everything in one place. The online shop offers products from different brands and it's aim is to encourage people to easy and friendly e-shopping.
 
 ## User stories
@@ -85,7 +85,12 @@ Only admin can add, edit and delete products or blog posts. Some of the fields a
 ### Features Left to implement
 * I would like to give the users the opportunity to rating the products.
 * I would like to give users the possibility to add unavailable product to wish list and send information, when product will be available on the stock.
+* I would like to add the size of the products.
 * I would like to give the opportunity to use contact form and read the Q&A answers.
+### Unfixed bugs
+1. Images displayed on individual product page: user needs to click on the imgae to see full product image.
+2. During the validation of the HTML code the duplicated id error occurs with the product and blog images.
+3. Python code validator shows the syntax error with f-string sentences. It might come from the wrong quotation, becouse of my keyborad.
 ## Technologies Used
 ### Languages Used
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -127,14 +132,11 @@ Only admin can add, edit and delete products or blog posts. Some of the fields a
 ## Testing
 The file contains separate testing documentation is available [here](https://github.com/KingaSzmyd/MSP4-DeluxeCoffeeShop/blob/main/TESTING.md).
 ## Validator Testing
-The W3C Markup Validator, W3C CSS Validator Services, JSHint ... were used to validate every page of the project to ensure there were no syntax errors in the project.
+The W3C Markup Validator, W3C CSS Validator Services, JSHint were used to validate every page of the project to ensure there were no syntax errors in the project.
 * HTML - [View](https://validator.w3.org/)
-No errors were returned when passing through the official W3C validator
 * CSS - [View](https://jigsaw.w3.org/css-validator/validator)
-No errors were found when passing through the official (Jigsaw) validator 
 * JavaScript - [View](https://jshint.com/)
 * Python - [View](https://extendsclass.com/python-tester.html)
-No errors were found when passing through the [Extendsclass.com](https://extendsclass.com/python-tester.html) validator
 ## Deployment
 ### Heroku 
 The project was deployed to Heroku using the following steps:
@@ -178,6 +180,7 @@ You can clone a repository so that it can be worked on locally by following step
 * [Font Awsome](https://fontawesome.com/)
 ### Media
 * [Unsplash](https://unsplash.com/)
+* [Amazon](https://www.amazon.com/)
 ## Acknowledgements
 1. My mentor Brian Macharia for all the feedback and aiding in the planning and execution of this project.
 2. Tutor support at Code Institute for their help and support.
