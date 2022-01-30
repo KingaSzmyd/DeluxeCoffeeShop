@@ -434,3 +434,9 @@ input[name='q']::placeholder {
 .card-body-contact {
     line-height: 5px;
 }
+
+/* Errors pages: 403, 404, 405, 500 */
+
+.img-thumbnail {
+    float: right;
+}
