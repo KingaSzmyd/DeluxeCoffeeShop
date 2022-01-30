@@ -87,10 +87,11 @@ Only admin can add, edit and delete products or blog posts. Some of the fields a
 * I would like to give users the possibility to add unavailable product to wish list and send information, when product will be available on the stock.
 * I would like to add the size of the products.
 * I would like to give the opportunity to use contact form and read the Q&A answers.
+* I would like that users from the individual shopping page are redirecting to the products from category they already are, not to all products.
 ### Unfixed bugs
 1. Images displayed on individual product page: user needs to click on the imgae to see full product image.
 2. During the validation of the HTML code the duplicated id error occurs with the product and blog images.
-3. Python code validator shows the syntax error with f-string sentences. It might come from the wrong quotation, becouse of my keyborad.
+3. Python code validator shows the syntax error with f-string sentences. It might come from the wrong quotation, becouse of my keyborad. However, the code is working as expected.
 ## Technologies Used
 ### Languages Used
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
